@@ -12,9 +12,9 @@ class BOX:
     www.box.com api
     works:
         ->  login
-        ->  get token w/ error handling.
+        ->  get token w/ error handling
     to-do:
-        ->  upload/download/explore.
+        ->  upload/download/explore
     """
 
     str_BuildGet        = 'https://www.box.com/api/oauth2/authorize?'
