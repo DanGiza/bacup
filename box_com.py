@@ -3,7 +3,7 @@ import webbrowser
 import simplejson as json
 # Legend
 # Start of var: str-string, nr-number, pw-password!,
-# End of var: l-link, t-text, o-object
+# End o var: l-link, t-text, o-object
 #
 
 #o_brw_Browser = mechanize.Browser()
