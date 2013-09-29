@@ -1,12 +1,14 @@
 import requests
 import webbrowser
+import logging
 import simplejson as json
 # Legend
 # Start of var: str-string, nr-number, pw-password!,
 # End of var: l-link, t-text, o-object
 #
 
-#o_brw_Browser = mechanize.Browser()
+logging.basicConfig(level = logging.INFO)
+
 class BOX:
     """
     www.box.com api
@@ -18,10 +20,10 @@ class BOX:
     """
 
     str_BuildGet        = 'https://www.box.com/api/oauth2/authorize?'
-    str_BuildToken      = 'https://www.box.com/api/oauth2/token'
     str_redirect_uri    = 'https://www.box.com/developers/services'
     str_response_type   = 'response_type=code'
     str_state           = 'authenticated'
+    str_BuildToken      = 'https://www.box.com/api/oauth2/token'
     str_client_id       = 'j11v31md50xohags558ue1t2bteto63w'
     str_client_secret   = 'awHdRpTm7eMslhv4ZelwxT81GIhHsXV2'
     str_grant_type      = 'authorization_code'
