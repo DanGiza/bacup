@@ -50,15 +50,16 @@ class BOX:
 
         try:
             responseDict = json.loads(o_MyRequest.text)
-        except Exception, err:
+        except Exception as err:
             print 'ERROR at handling POST response data: \n' % err
             return 0, o_MyRequest.text
 
         try:
             if responseDict['access_token']:
                 return 1, responseDict
-        except Exception, err:
-            print 'ERROR:GetTOKEN() -> POST response:\n' % err
+        except Exception as err:
+            # print 'ERROR:GetTOKEN() -> POST response:\n' % err
+            log
             return 0, o_MyRequest.text
 
     def BOX_LogIn(self):
